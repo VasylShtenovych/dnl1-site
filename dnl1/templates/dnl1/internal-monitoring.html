@@ -1,0 +1,64 @@
+{% extends 'dnl1/wrapper.html' %}
+
+{% block title %}
+Внутрішній моніторинг
+{% endblock %}
+
+{% block cssfiles %}
+{% load static  %}
+<!-- links css here -->
+{% endblock %}
+
+{% block content %}
+<style>
+    #document-iframe {
+      width: 40%;
+      height: 640px;
+    }
+    @media screen and (max-width: 900px) {
+      #document-iframe {
+        width: 70%;
+      }
+    }
+    @media screen and (max-width: 640px) {
+      #document-iframe {
+        height: 500px;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      #document-iframe {
+        height: 350px;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      #document-iframe {
+        width: 70%;
+      }
+    }
+    @media screen and (max-width: 640px) {
+      #document-iframe {
+        height: 500px;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      #document-iframe {
+        height: 350px;
+      }
+    }
+    
+    </style>
+{% include "dnl1/includes/page-title.html" with title='Внутрішній моніторинг' %}
+
+<div class="container">
+    <p>Положення про внутрішню систему забезпечення якості освіти в Долинському ліцеї №1 розроблено відповідно до вимог ч. 3 ст. 41 Закону України “Про освіту”, Концепції реалізації державної політики у сфері реформування загальної середньої освіти «Нова українська школа» на період до 2029 року, <a aria-label="Статуту закладу освіти (opens in a new tab)" href="https://drive.google.com/file/d/1chSGn1oFPE2DPbz62Pkpp8FmLkKXC1lj/view" target="_blank" rel="noreferrer noopener" class="rank-math-link" role="link">Статуту закладу освіти</a> та інших нормативних документів.</p>
+
+    
+    <div class="center"><iframe id="document-iframe" src="https://drive.google.com/file/d/1mgTIFqWm4dvluFBNDxI1DI9ZmkXl3ysgp7sfXflvkH4/preview" height="640"></iframe></div>
+
+</div>
+{% endblock %}
+
+
+{% block jsfiles %}
+<!-- links js here -->
+{% endblock %}

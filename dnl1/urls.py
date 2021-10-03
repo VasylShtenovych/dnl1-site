@@ -44,5 +44,13 @@ urlpatterns = [
     path('events/', views.events),
     path('educational-system/', views.educational_system),
     path('teachers-recommendations/', views.teachers_recs),
+    path('students-rights-and-obligations/', views.pupils_rules),
+    path('parents-rights-and-obligations/', views.parents_rules),
+    path('service-area/', views.service_area),
+    path('stop-bulling/', views.stop_bulling),
+    path('internet-security/', views.internet_security),
+    path('managment-structure/', views.managment_structure),
+    path('internal-monitoring/', views.internal_monitoring),
+    path('process-language', views.process_language),
     
 ]

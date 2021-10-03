@@ -9,7 +9,8 @@
     <title>{% block title %}{% endblock %} - ДНЛ1</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static '/dnl1/css/layout.css' %}">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
     {% block metatags %}
     {% endblock %}
 
@@ -18,7 +19,7 @@
 </head>
 <body>
  
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light btco-hover-menu" >
+    <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-light btco-hover-menu" >
         <div class="container">
             <a class="navbar-brand" href="/"><img src="{% static 'dnl1/images/logo.png' %}" height=35></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +29,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Інформація</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown1">
                         <li><a class="dropdown-item" href="https://drive.google.com/file/d/1chSGn1oFPE2DPbz62Pkpp8FmLkKXC1lj/view" target="_blank">Статут наукового ліцею</a></li>
                         <li><a class="dropdown-item" href="/license">Ліцензія</a></li>
                         <li><a class="dropdown-item" href="/collective">Кадровий склад</a></li>
@@ -40,7 +41,7 @@
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Управління</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="/methodical-work/administration">Адміністрація закладу</a></li>
                         <li><a class="dropdown-item" href="https://drive.google.com/file/d/1KOafxF8szmtQgFBJqex7dJbegfRwQyvs/view" target="_blank">Річний план роботи</a></li>
                         <li><a class="dropdown-item" href="https://drive.google.com/file/d/1zVyC1N7o_Sx2m_viaBtwitddDBRhhioK/view" target="_blank">Педагогічні ради</a></li>
@@ -71,8 +72,133 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
+    <div class = "main-wrapper">
+        <nav class = "mega-navbar container">
+          <div class = "brand-and-icon">
+            <a href="/" class = "navbar-brand"><img src="{% static 'dnl1/images/logo.png' %}" height=35></a>
+            <button type = "button" class = "navbar-toggler">
+              <i class = "fas fa-bars"></i>
+            </button>
+          </div>
+  
+          <div class = "navbar-collapse">
+            <ul class = "navbar-mega-nav">
+  
+              <li>
+                <a href = "#" class = "menu-link">
+                  Інформація
+                  <span class = "drop-icon">
+                    <i class = "fas fa-chevron-down"></i>
+                  </span>
+                </a>
+                <div class = "sub-menu sub-menu-3clm">
+                  <!-- item -->
+                  <div class = "sub-menu-item">
+                    <h4>Адміністрація та педагогічний колектив</h4>
+                    <ul>
+                      <li><a href="/methodical-work/administration">Адміністрація</a></li>
+                      <li><a href="/collective">Кадровий склад</a></li>
+                      <li><a href="/managment-structure">Структура та органи управління</a></li>
+                    </ul>
+                  </div>
+                  <!-- end of item -->
+                  <!-- item -->
+                  <div class = "sub-menu-item">
+                    <h4>Учням та батькам</h4>
+                    <ul>
+                      <li><a href = "/students-rights-and-obligations">Права та обов'язки учнів</a></li>
+                      <li><a href = "/parents-rights-and-obligations/">Права та обов'язки батьків</a></li>
+                      <li><a href="/entry-rules">Правила прийому до закладу</a></li>
+                      <li><a href="/schedule">Розклад уроків та режим роботи</a></li>
+                      <li><a href = "#">Гуртки</a></li>
+                    </ul>
+                  </div>
+                  <div class = "sub-menu-item">
+                    <h4>Допомога і безпека</h4>
+                    <ul>
+                      <li><a href="/stop-bulling">Стоп булінг</a></li>
+                      <li><a href="/internet-security">Безпека в Інтернеті</a></li>
+                      <li><a href="/psychological-service">Практичний психолог</a></li>
+                      <li><a href="/social-service">Соціальний педагог</a></li>
+                      <li><a href="/medical-service">Медичне обсуговувавння</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <a href = "#" class = "menu-link">
+                  Прозорість та інформаційна відкритість
+                  <span class = "drop-icon">
+                    <i class = "fas fa-chevron-down"></i>
+                  </span>
+                </a>
+                <div class = "sub-menu sub-menu-4clm">
+                  <!-- item -->
+                  <div class = "sub-menu-item">
+                    <h4>Документація</h4>
+                    <ul>
+                      <li><a href="https://drive.google.com/file/d/1chSGn1oFPE2DPbz62Pkpp8FmLkKXC1lj/view" target="_blank">Статут закладу</a></li>
+                      <li><a href = "#">Ліцензія</a></li>
+                      <li><a href="https://drive.google.com/file/d/1Aw87CBD-ZzOdyTPQXjMmK626ftCeiD4e/view" target="_blank">Освітні програми</a></li>
+                      <li><a href="https://drive.google.com/file/d/1KOafxF8szmtQgFBJqex7dJbegfRwQyvs/view" target="_blank">Річний план</a></li>
+                      <li><a href="/process-language">Мова освітнього процесу</a></li>
+                      <li><a href="https://drive.google.com/file/d/1RytZ6QR40wYq908pF4LhKtz7x6Fr4EsU/view" target="_blank">Планова мережа</a></li>
+                      <li><a href="https://drive.google.com/file/d/1l0C_gDDncMQJTDiBGORY8WjRvsMAt4Ix/view" target="_blank">Фактична мережа</a></li>
+                      <li><a href="/internal-monitoring">Внутрішній моніторинг</a></li>
+                      <li><a href="https://youtu.be/za1o4Iwrr6E" target="_blank">Звіт керівника</a></li>
+                    </ul>
+                  </div>
+                  <!-- end of item -->
+                  <!-- item -->
+                  <div class = "sub-menu-item">
+                    <h4>Інше</h4>
+                    <ul>
+                      <li><a href="/inclination">Умови доступності</a></li>
+                      <li><a href="/material-base">Матеріально-технічне забезпечення</a></li>
+                      <li><a href="/dining">Харчування</a></li>
+                      <li><a href="/library">Протоколи вибору підручників</a></li>
+                      <li><a href="/service-area">Територія обслуговування</a></li>
+                    </ul>
+                  </div>
+                  <!-- end of item -->
+                  <!-- item -->
+                  
+                  <div class = "sub-menu-item">
+                    <h4>Фінанси</h4>
+                    <ul>
+                      <li><a href="https://drive.google.com/file/d/1ryHn4ulftKhH_BQRqOW-RZAGCrbhUtBK/view" target="_blank">Фінансова звітність</a></li>
+                      <li><a href="https://drive.google.com/file/d/1o8Uj-0-suAMIQcbQP9lg3K7ZA9o0RhUCLD6us173rZY/view" target="_blank">Використання коштів</a></li>
+                    </ul>
+                  </div>
 
+                  <div class = "sub-menu-item">
+                    <h4>Вакансії</h4>
+                    <ul>
+                      <li><a href="/vacancies">Вакансії</a></li>
+                    </ul>
+                  </div>
+                  <!-- end of item -->
+                </div>
+              </li>
+  
+              
+              <li>
+                <a href="/news">Новини</a>
+              </li>
+              
+              <li>
+                <a href="/photo-gallery">Галерея</a>
+              </li>
+              
+              <li>
+                <a href="/contacts">Контакти</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
     {% block content %}
     {% endblock %}

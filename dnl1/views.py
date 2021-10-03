@@ -86,6 +86,30 @@ def educational_system(request):
 def teachers_recs(request):
     return render(request, 'dnl1/teachers-recommendations.html')
 
+def pupils_rules(request):
+    return render(request, 'dnl1/pupils-rules.html')
+
+def parents_rules(request):
+    return render(request, 'dnl1/parents-rules.html')
+
+def service_area(request):
+    return render(request, 'dnl1/service-area.html')
+
+def stop_bulling(request):
+    return render(request, 'dnl1/stop-bulling.html')
+
+def internet_security(request):
+    return render(request, 'dnl1/internet-security.html')
+
+def managment_structure(request):
+    return render(request, 'dnl1/managment-structure.html')
+
+def internal_monitoring(request):
+    return render(request, 'dnl1/internal-monitoring.html')
+
+def process_language(request):
+    return render(request, 'dnl1/process-language.html')
+
 # pages in work
 def license(request):
     return page_is_in_work(request)
