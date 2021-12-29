@@ -55,6 +55,7 @@ class ContestYear(models.Model):
     class Meta:
         verbose_name = 'Олімпіадний рік'
         verbose_name_plural = 'Олімпіадні роки'
+        ordering = ['-year']
 
 
 class Winner(models.Model):
